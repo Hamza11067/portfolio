@@ -1,10 +1,11 @@
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
 
 const JetBrainsMono = JetBrains_Mono({
   variable: "--font-jetBrainsMono",
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800"]
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
 });
 
 export const metadata = {
@@ -17,8 +18,12 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       className={`${JetBrainsMono.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col font-mono">{children}</body>
+      <body className="min-h-full flex flex-col font-mono">
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
