@@ -54,9 +54,9 @@
 }
 
 :root {
-  --background: #1c1c22;        /* The dark color from the video */
-  --foreground: #ffffff;        /* White text */
-  --primary: #030406;           /* The green color */
+  --background: #1c1c22; /* The dark color from the video */
+  --foreground: #ffffff; /* White text */
+  --primary: #030406; /* The green color */
   --primary-foreground: #1c1c22;
   --accent: #00ff99;
   --accent-foreground: #1c1c22;
@@ -138,13 +138,13 @@
   html {
     @apply font-primary;
   }
-  .h1{
+  .h1 {
     @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;
   }
-  .h2{
+  .h2 {
     @apply text-[36px] xl:text-[48px] leading-[1.1] font-semibold;
   }
-  .h3{
+  .h3 {
     @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
   }
 }
