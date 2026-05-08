@@ -24,8 +24,12 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full flex flex-col font-primary">
         <Header />
-        <StairTransition/>
-        <PageTransition>{children}</PageTransition>
+        <StairTransition />
+        <PageTransition>
+          <div className="container mx-auto px-6 md:px-10 xl:px-0">
+            {children}
+          </div>
+        </PageTransition>
       </body>
     </html>
   );
