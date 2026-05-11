@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
       className={`${JetBrainsMono.variable} h-full antialiased`}
       suppressHydrationWarning={true}
     >
-      <body className="min-h-full flex flex-col font-primary">
+      <body className="min-h-full flex flex-col font-primary no-scrollbar">
         <Header />
         <StairTransition />
         <PageTransition>
