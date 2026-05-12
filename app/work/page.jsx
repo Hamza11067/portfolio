@@ -18,13 +18,13 @@ import WorkSliderBtns from "../../components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "frontend",
+    category: "Ecommerce",
     title: "project 1",
-    description: "Frontend website made using library called React.js",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
+    description: "MERN stack ecommerce website made using React.js, Node.js",
+    stack: [{ name: "MongoDB" }, { name: "React.js" }, { name: "Node.js" }],
     image: "/assets/work/thumb1.png",
-    live: "",
-    github: "",
+    live: "https://watches-co.vercel.app/",
+    github: "https://github.com/Hamza11067/WatchesCo",
   },
   {
     num: "02",
@@ -98,7 +98,7 @@ const Work = () => {
               {/* buttons */}
               <div className="flex items-center gap-4">
                 {/* Live Project Button */}
-                <Link href={project.live}>
+                <Link href={project.live} target="_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-17.5 h-17.5 rounded-full bg-white/5 cursor-pointer flex justify-center items-center group">
@@ -111,7 +111,7 @@ const Work = () => {
                   </TooltipProvider>
                 </Link>
                 {/* Github Project Button */}
-                <Link href={project.github}>
+                <Link href={project.github} target="_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-17.5 h-17.5 rounded-full bg-white/5 cursor-pointer flex justify-center items-center group">
