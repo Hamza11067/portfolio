@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
 import StairTransition from "@/components/StairTransition";
+import WhatsAppButton from "@/components/WhatsAppBtn";
 
 const JetBrainsMono = JetBrains_Mono({
   variable: "--font-jetBrainsMono",
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
         <PageTransition>
           <div className="container mx-auto px-6 md:px-10 xl:px-0">
             {children}
+            <WhatsAppButton />
           </div>
         </PageTransition>
       </body>
