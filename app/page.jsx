@@ -9,7 +9,6 @@ export default function Home() {
     <section className="h-full">
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
-
           {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-0 ">
             <span className="text-xl">Software Developer</span>
@@ -24,10 +23,12 @@ export default function Home() {
 
             {/* Buttons and Socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button>
-                <span>Download CV</span>
-                <FiDownload />
-              </Button>
+              <a href="/cv.pdf" download>
+                <Button>
+                  <span>Download CV</span>
+                  <FiDownload />
+                </Button>
+              </a>
               <div className="mb-8 xl:mb-0">
                 <Socials
                   containerStyles="flex gap-6"
@@ -44,7 +45,7 @@ export default function Home() {
         </div>
       </div>
       {/* Stats */}
-      <Stats/>
+      <Stats />
     </section>
   );
 }

@@ -31,7 +31,7 @@ const MobileNav = () => {
   const pathname = usePathname();
   return (
     <Sheet>
-      <SheetTrigger clasName="flex justify-between items-center">
+      <SheetTrigger className="flex justify-between items-center">
         <CiMenuFries className="text-[32px] text-accent" />
       </SheetTrigger>
       <SheetContent className="flex flex-col">
